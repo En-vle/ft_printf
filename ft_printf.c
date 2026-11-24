@@ -6,7 +6,7 @@
 /*   By: enviale <enviale@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:09:04 by enviale           #+#    #+#             */
-/*   Updated: 2026/11/06 13:34:01 by enviale          ###   ########.fr       */
+/*   Updated: 2026/11/17 11:26:49 by enviale          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,35 +60,7 @@ int	ft_printf(const char *base, ...)
 		count += tmp;
 		base++;
 	}
-	va_end (ap);
+	va_end(ap);
 	return (count);
 }
 
-// int main(void)
-// {
-// 	int nb = 42;
-// 	ft_printf("\n------- FT -------\n");
-// 	int res1 = ft_printf("Le caractere est : %c\n", 'a');
-// 	int res2 = ft_printf("La chaine est : %s\n", "bonjour");
-// 	int res3 = ft_printf("Voici un %%\n");
-// 	int res4_5=ft_printf("La chaine avait %i caracteres\n1 + 1 = %d\n",7,2);
-// 	int res6 = ft_printf("Voici un grand nombre : %u\n", -1);
-// 	int res7 = ft_printf("42 en hexa : %x\n", 42);
-// 	int res8 = ft_printf("Un grand nombre en HEXA : %X\n", -1);
-// 	int res9 = ft_printf("L'adresse de 'nb' est %p\n", &nb);
-// 	int restt = res1 + res2 + res3 + res4_5 + \
-// 	res6 + res7 + res8 + res9;
-// 	ft_printf("%d characteres ont ete ecrits\n", restt);
-// 	printf("\n------ VRAI ------\n");
-// 	int bis_res1 = printf("Le caractere est : %c\n", 'a');
-// 	int bis_res2 = printf("La chaine est : %s\n", "bonjour");
-// 	int bis_res3 = printf("Voici un %%\n");
-// 	int bis_res4_5=printf("La chaine avait %i caracteres\n1 + 1 = %d\n",7,2);
-// 	int bis_res6 = printf("Voici un grand nombre : %u\n", -1);
-// 	int bis_res7 = printf("42 en hexa : %x\n", 42);
-// 	int bis_res8 = printf("Un grand nombre en HEXA : %X\n", -1);
-// 	int bis_res9 = printf("L'adresse de 'nb' est %p\n", &nb);
-// 	int bis_restt = bis_res1 + bis_res2 + bis_res3 + bis_res4_5 + \
-// 	bis_res6 + bis_res7 + bis_res8 + bis_res9;
-// 	printf("%d characteres ont ete ecrits\n", bis_restt);
-// }
